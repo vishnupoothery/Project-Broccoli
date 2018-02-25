@@ -23,34 +23,59 @@
                 Objects are the core things that Python programs manipulate. Every object has a type that defines the kinds of things programs can do with those type of objects.
                 Types are either Scalar or Non-Scalar. Scalar are indivisible(like atoms). Non-Scalar have their own internal structure.
                 Python has four type of scalar objects:
-                <ul>
+                <ol>
                     <li><span class="blue-text test-darken-4">int</span> - to represent integer values</li>
                     <li><span class="blue-text test-darken-4">float</span> - to represent floating point numbers</li>
                     <li><span class="blue-text test-darken-4">bool</span> - to represent True and False</li>
                     <li><span class="blue-text test-darken-4">Nones</span> - It is unique to python and it represents a single value</li>
-                </ul>
+                </ol>
                 You can use type() to check the type of the object. Example: <br>
             </div>
             <div class="container blue-grey lighten-4" >
                 <code>1. <span class="blue-text test-darken-4">type</span>(5) <br>
                     Output : <br>int</code>
             </div>
+            <br>
             <div class="container">
                 Sometimes we want to change the type of an object especially with numbers. This is called Casting.
                 This way you can convert object from one type to another.
                 Try: 
-                </div>
-                <div class="container blue-grey lighten-4" >
-                    <code>1. <span class="blue-text test-darken-4">float</span>(3) <br>
-                        2. <span class="blue-text test-darken-4">int</span>(3.9)<br>Output :<br>3.0<br>3</code>
-                </div>
-
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>1. <span class="blue-text test-darken-4">float</span>(3) <br>
+                    2. <span class="blue-text test-darken-4">int</span>(3.9)<br>Output :<br>3.0<br>3</code>
+            </div>
+            <br>
+            <div class="container"><strong>Variables</strong> provide a way to associate names with objects. 
+            </div>
+            <div class="container blue-grey lighten-4">
+                <code>Example: <span class="blue-text test-darken-4">pi</span> = 3<br><span class="blue-text test-darken-4">radius</span> = 11</code>
+            </div>
+            <br>
+            <div class="container">
+                Tip: Apt choice of variable names plays an important role in enhancing readability. Consider the two code fragments:
+            </div>
+            <div class="container blue-grey lighten-4">
+                <code>
+                    <span class="blue-text test-darken-4">a</span> = 3.14159
+                    <br>
+                    <span class="blue-text test-darken-4">pi</span> = 3.14159
+                    <br>
+                    <span class="blue-text test-darken-4">b</span> = 11.2
+                    <br>
+                    <span class="blue-text test-darken-4">diameter</span> = 11.2
+                    <br>
+                    <span class="blue-text test-darken-4">c</span> = a*(b**2)
+                    <br>
+                    <span class="blue-text test-darken-4">area</span> = <span class="blue-text test-darken-4">pi</span>*(<span class="blue-text test-darken-4">diameter</span>**2)
+                </code>
+            </div>
 
         </div>
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="../js/materialize.js"></script>
         <script src="../js/init.js"></script>
-
+<br>
     </body>
 </html>
