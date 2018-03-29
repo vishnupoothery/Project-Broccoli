@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Variables</a>
+                </div>
+            </nav>
+        </div>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                In Python 3, we use <strong>input()</strong>
+function to get input directly from the user. This takes input as string which can be
+type casted to another types. To print a specific input message we write that
+message in the parenthesis of <strong>input()</strong>
+            </div>
+<br>
+            <div class="container blue-grey lighten-4" >
+                <code>1. name = <span class="blue-text text-darken-4">input</span>(‘Enter your name: ’) <br>
+                    2. <span class="blue-text text-darken-4">print</span>(name) <br>
+                    3. <span class="blue-text text-darken-4">print</span>(‘Are you really’, name, ‘?’) <br>
+                    4. <span class="blue-text text-darken-4">print</span>(‘Are you really’, name + ‘?’) <br>
+                    Output : <br>Enter your name: Jon Snow<br>
+                    Jon Snow<br>
+                    Are you really Jon Snow ?<br>
+                    Are you really Jon Snow?
+                </code>
+            </div>
+            <br>
+            <div class="container">Notice that the first print statement introduces a blank before the “ ? ” <br>It does this
+                because when print is given multiple arguments it places a blank space between
+                the values associated with the arguments. <br>The second print statement uses
+                concatenation to produce a string that does not contain the superfluous blank and
+                passes this as the only argument to print.</div>
+                <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+<br>
+    </body>
+</html>
