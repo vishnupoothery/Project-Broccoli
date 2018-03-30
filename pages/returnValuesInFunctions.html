@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Functions</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p><strong>Return values</strong></p>
+                <p>A function can return a value or a set of values. When a function returns a value, the calling line must provide a variable in which to store the return value. A function stops running when it reaches a return statement.</p>
+                <p><strong>Returning a single value :</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def get_full_name(first, last):<br>
+                    2. &ThickSpace;&ThickSpace; full_name = first + ' ' + last <br>
+                    3. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">return</span> full_name.title() <br>
+                    4. musician = <span class="blue-text text-darken-4">get_full_name</span>('jimi', 'hendrix') <br>
+                    5. <span class="blue-text text-darken-4">print</span>(musician)
+                </code>
+            </div>
+            <div class="container">
+                <p><strong>Returning a dictionary</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def build_person(first, last):<br>
+                    2. &ThickSpace;&ThickSpace; person = {'first': first, 'last': last} <br>
+                    3. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">return</span> person <br>
+                    4. musician = <span class="blue-text text-darken-4">build_person</span>('jimi', 'hendrix') <br>
+                    5. <span class="blue-text text-darken-4">print</span>(musician)
+                </code>
+            </div><br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
