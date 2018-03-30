@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Functions</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p><strong>Passing Information to a Function</strong></p>
+                <p>Information that's passed to a function is called an argument; information that's received by a function is called a parameter. Arguments are included in parentheses after the function's name, and parameters are listed in parentheses in the function's definition.</p>
+                <p><strong>Passing one Argument :</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def greet_user(name):<br>
+                    2. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("Hello, " + name + "!")<br>
+                    3. <span class="blue-text text-darken-4">greet_user</span>('jesse')<br>
+                    4. <span class="blue-text text-darken-4">greet_user</span>('diana')<br>
+                    5. <span class="blue-text text-darken-4">greet_user</span>('brandon')
+                </code>
+            </div>
+            <br>
+            <div class="container">
+                <P><strong>Positional and keyword Arguments</strong></P>
+                <p>The two main kinds of arguments are positional and keyword arguments. When you use positional arguments Python matches the first argument in the function call with the first parameter in the function definition, and so forth. <br>With keyword arguments, you specify which parameter each argument should be assigned to in the function call. When you use keyword arguments, the order of the arguments doesn't matter.</p>
+                <p><strong>Using Positional arguments :</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def describe_pet(animal, name):<br>
+                    2. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("\nI have a " + animal + ".")<br>
+                    3. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("Its name is " + name + ".")<br>
+                    4. <span class="blue-text text-darken-4">describe_pet</span>('hamster', 'harry')<br>
+                    5. <span class="blue-text text-darken-4">describe_pet</span>('dog', 'willie')
+                </code>
+            </div><br>
+            <p class="container"><strong>Using Keyword arguments :</strong></p><br>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def describe_pet(animal, name):<br>
+                    2. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("\nI have a " + animal + ".")<br>
+                    3. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("Its name is " + name + ".")<br>
+                    4. <span class="blue-text text-darken-4">describe_pet</span>(animal='hamster', name='harry')<br>
+                    5. <span class="blue-text text-darken-4">describe_pet</span>(name='willie', animal='dog')
+                </code>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
