@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Strings</a>
+                </div>
+            </nav>
+        </div>
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                Objects of type <strong>str</strong> are used to represent strings of characters. <br>Literals of type
+                str can be written using either single or double quotes, e.g., 'abc' or "abc" .
+                <br>The literal '123' denotes a string of characters, not the number one hundred
+                twenty-three.<br><br>
+                Try typing the following expressions in to the Python interpreter (remember that
+                the >>> is a prompt, not something that you type):
+            </div>
+            <br>
+            <div class="container blue-grey lighten-4" >
+                <code>>>> 'a'<br>
+                    >>> 3*4<br>
+                    >>> 3*'a'<br>
+                    >>> 3+4<br>
+                    >>> 'a'+'a'
+                </code>
+            </div>
+            <br>
+            <div class="container">The operator + is said to be overloaded: It has different meanings depending
+                upon the types of the objects to which it is applied.<br><br>
+                Strings are one of several sequence types in Python. They share the following
+                operations with all sequence types.
+                <ul class="browser-default">
+                    <li>
+                        The length of a string can be found using the len function. For example, the
+                        value of len('abc') is 3.    
+                    </li>
+                    <li>
+                        Indexing can be used to extract individual characters from a string. In Python,
+                        all indexing is zero-based. For example, typing 'abc'[0] into the interpreter will
+                        cause it to display the string 'a'. Typing 'abc'[3] will produce the error message
+                        IndexError: string index out of range. Negative numbers are used to index from the
+                        end of a string. For example, the value of 'abc'[-1] is 'c'.
+                    </li>
+                    <li>
+                        Slicing is used to extract substrings of arbitrary length. If s is a string, the
+                        expression s[start:end] denotes the substring of s that starts at index start and
+                        ends at index end-1 . For example, 'abc'[1:3] = 'bc'. If the value before the colon is
+                        omitted, it defaults to 0 . If the value after the colon is omitted, it defaults to the
+                        length of the string. Consequently, the expression 'abc'[:] is semantically
+                        equivalent to 'abc'.
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+        <br>
+    </body>
+</html>

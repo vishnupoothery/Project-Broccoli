@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">While loop</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                A while loop repeats a block of code as long as a certain condition is true.<br>
+                <strong>Syntax of while loop</strong><br>
+            </div>
+            <div class="container blue-grey lighten-4" ><code>
+                1. test_variable = value<br>
+                2. while(test_condition):<br>
+                3. &ThickSpace;&ThickSpace; code to be repeated<br>
+                4. &ThickSpace;&ThickSpace; test_variable += 1<br>
+                5. #statement not part of while</code></div>
+            <br>
+            <div class="container blue-grey lighten-4">
+                Eg 1:<br>
+                <code>
+                    1. current_value = 1<br>
+                    2. while current_value &lt;= 5:<br> 
+                    3. &ThickSpace;&ThickSpace; print(current_value)<br>
+                </code>
+            </div>
+            <br>
+            <div class="container blue-grey lighten-4">
+                Eg 2:<br>
+                <code>
+                    1. msg = ''<br>
+                    2. while msg != 'quit':<br>
+                    3. &ThickSpace;&ThickSpace; msg = input("What's your message? ")<br>
+                    4. &ThickSpace;&ThickSpace; print(msg)<br>
+                </code>
+            </div>
+            <div class="container">
+                <p>Example 2 lets the user choose when to exit the program. The above program quits when the user types 'quit'</p>
+            </div>
+
+
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
