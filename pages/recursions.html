@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Recursions</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p>You may have heard of recursion, That’s an urban legend spread by computer
+                    scientists to make people think that we are smarter than we really are. Recursion
+                    is a very important idea, but it’s not so subtle.
+                    <br>
+                    <strong>In simple terms, it is the process of calling itself from the function.</strong>
+                </p>
+                <p>Consider an example of recursion: Program to calculate factorial of a number.<br>
+                    The classic inductive definition is,<br>
+                    1! = 1<br>
+                    (n + 1)! = (n + 1) * n!</p>
+                <p><strong>ITERATIVE VERSION</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def factI(n):<br>
+                    2. &ThickSpace;&ThickSpace; result = 1<br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">while</span> n > 1:<br>
+                    4. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; result = result * n<br>
+                    5. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; n -= 1<br>
+                    6. <span class="blue-text text-darken-4">return</span> result
+                </code>
+            </div>
+            <div class="container">
+                <p><strong>RECURSIVE APPROACH</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def factR(n):<br>
+                    2. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">if</span> n == 1:<br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">return</span> n<br>
+                    4. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">else</span>:<br>
+                    5. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">return</span> n*factR(n - 1)
+                </code>
+            </div><br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
