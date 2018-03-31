@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Dictionary</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p>
+                    Dictionary is basically a <strong>“key : value”</strong> pair in Python. Each key is separated from
+                    its value by a colon (:), the items are separated by commas, and the whole thing is
+                    enclosed in curly braces. An empty dictionary without any items is written with just
+                    two curly braces, like this: {}.
+                </p>
+                <p>
+                    Keys are unique within a dictionary while values may not be. The values of a
+                    dictionary can be of any type, but the keys must be of an immutable data type
+                    such as strings, numbers, or tuples.
+                </p>
+                <p>
+                    <strong>Accessing values in Dictionary: </strong><br>To access dictionary elements, you can use the
+                    familiar square brackets along with the key to obtain its value. <br>Following is a
+                    simple example –<br>
+                    dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}<br>
+                    >>>print ("dict['Name']: ", dict['Name'])<br>
+                    dict[‘Name’]: Zara<br>
+                    >>>print ("dict['Age']: ", dict['Age'])<br>
+                    dict[‘Age’]: 7<br><br>
+                    If we attempt to access a data item with a key, which is not a part of the dictionary,
+                    we get an error.
+                </p>
+                <p>
+                    <strong>Updating Dictionary</strong><br>
+                    You can update a dictionary by adding a new entry or a key-value pair, modifying
+                    an existing entry, or deleting an existing entry as shown in a simple example given
+                    below.<br>
+                    dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}<br>
+                    dict['Age'] = 8; # update existing entry<br>
+                    dict['School'] = "DPS School" # Add new entry<br>
+                </p>
+                <p>
+                    <strong>Delete Dictionary Elements</strong><br>
+                    You can either remove individual dictionary elements or clear the entire contents
+                    of a dictionary. You can also delete entire dictionary in a single operation.
+                    To explicitly remove an entire dictionary, just use the del statement. <br>Following is a
+                    simple example −<br>
+                    dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}<br>
+                    del dict['Name'] # remove entry with key 'Name'<br>
+                    dict.clear() # remove all entries in dict<br>
+                    del dict # delete entire dictionary<br>
+                    An exception is raised because after del dict, the dictionary does not exist.<br><br>
+                    <strong>Some Dictionary Operations:</strong>
+                </p>
+                <ul class="browser-default">
+                    <li><strong>dict.clear()</strong> - Removes all elements of dictionary dict.</li>
+                    <li><strong>dict.get(key, default=None)</strong> - For key key, returns value or default if key not
+                        in dictionary.</li>
+                    <li><strong>dict.items()</strong> - Returns a list of dict's (key, value) tuple pairs</li>
+                    <li><strong>dict.keys()</strong> - Returns list of dictionary dict's keys</li>
+                    <li><strong>dict.values()</strong> - Returns list of dictionary dict's values</li>
+                    <li><strong>dict.update(dict2)</strong> - Adds dictionary dict2's key-values pairs to dict</li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>

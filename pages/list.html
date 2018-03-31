@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Lists</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p>The list is the most versatile datatype available in Python, which can be written a
+                    list of comma-separated values (items) between square brackets. Important thing
+                    about a list is that the items in a list need not be of the same type.
+                </p>
+                <P>
+                    Creating a list is as simple as putting different comma-separated values between
+                    square brackets. For example −<br>
+                    list1 = [‘physics’, ‘chemistry’, 1997, 2000]<br>
+                    list2 = [1, 2, 3, a, b]
+                </P>
+                <p>
+                    <strong>Accessing Values in Lists:</strong> <br>To access values in lists, use the square
+                    brackets for slicing along with the index or indices to obtain value available at
+                    that index.<br>
+                    For example −<br>
+                    >>>print(list1[0]) <br>
+                    physics <br>
+                    >>>print(list2[1:5])<br>
+                    [2, 3, a, b]
+                </p>
+                <p>
+                    <strong>Delete List Elements:</strong> <br>To remove a list element, you can use either the del
+                    statement if you know exactly which element(s) you are deleting. You can use
+                    the remove() method if you do not know exactly which items to delete.<br>
+                    For example<br>
+                    del(list1[2])<br>
+                    remove(‘chemistry’)
+                </p>
+                <strong>Basic List Operations:</strong><br>
+                <ul class="browser-default">
+                    <li>
+                        <strong>list.append(x)</strong> - Adds an item to the end of the list.
+                    </li>
+                    <li>
+                        <strong>list.extend(iterable)</strong> - extends the list by appending all the items from the
+                        iterable.
+                    </li>
+                    <li>
+                        <strong>list.insert(i, x)</strong> - inserts an item x at ith place in the list
+                    </li>
+                    <li>
+                        <strong>list.clear()</strong> - removes all the elements from the list
+                    </li>
+                    <li>
+                        <strong>list.index(x, start, end)</strong> - returns zero-based index in the list of the first
+                        element that is equal to x. Raises ValueError otherwise.
+                    </li>
+                    <li>
+                        <strong>list.count(c)</strong> - returns the number of times x appears in the list
+                    </li>
+                    <li>
+                        <strong>list.sort(key = None, reverse=None)</strong> - sorts the list in place
+                    </li>
+                    <li>
+                        <strong>list.reverse()</strong> - reverses the list in place.s
+                    </li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
