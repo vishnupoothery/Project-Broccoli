@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Classes</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p><strong>Modifying attributes</strong><br>
+                    You can modify an attribute's value directly, or you can write methods that manage updating values more carefully.
+                </p>
+                <p><strong>Modifying an attribute directly</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. my_new_car = Car('audi', 'a4', 2016) 
+                    2. my_new_car.fuel_level = 5
+                </code>
+            </div>
+            <br>
+            <p class="container"><strong>Writing a method to update an attribute's value</strong></p>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def update_fuel_level(self, new_level):<br>
+                    2. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">if</span> new_level &lt;= self.fuel_capacity: <br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; self.fuel_level = new_level <br>
+                    4. &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">else</span>: <br>
+                    5. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; print("The tank can't hold that much!")
+                </code>
+            </div>
+            <br>
+            <p class="container"><strong>Writing a method to increment an attribute's value</strong></p>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. def add_fuel(self, amount):<br>
+                    2. &ThickSpace;&ThickSpace; if (self.fuel_level + amount &lt;= self.fuel_capacity): <br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; self.fuel_level += amount print("Added fuel.") <br>
+                    4. &ThickSpace;&ThickSpace; else: <br>
+                    5. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; print("The tank won't hold that much.")
+                </code>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>

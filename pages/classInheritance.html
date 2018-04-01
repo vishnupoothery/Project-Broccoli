@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Classes</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p><strong>Class Inheritane</strong><br>
+                    If the class you're writing is a specialized version of another class, you can use inheritance. When one class inherits from another, it automatically takes on all the attributes and methods of the parent class. The child class is free to introduce new attributes and methods, and override attributes and methods of the parent class. <br>To inherit from another class include the name of the parent class in parentheses when defining the new class.
+                </p>
+                <p><strong>The __init__() method for a child class</strong></p>
+            </div>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. class ElectricCar(Car):<br>
+                    2. &ThickSpace;&ThickSpace; def __init__(self, make, model, year):<br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; super().__init__(make, model, year)<br>
+                    4. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; self.battery_size = 70 <br>
+                    5. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; self.charge_level = 0
+                </code>
+            </div>
+            <br>
+            <p class="container"><strong>Adding new methods to the child class</strong></p>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. class ElectricCar(Car): <br>
+                    2. &ThickSpace;&ThickSpace; def charge(self): <br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; self.charge_level = 100 <br>
+                    4. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; <span class="blue-text text-darken-4">print</span>("The vehicle is fully charged.")
+                </code>
+            </div>
+            <br>
+            <p class="container"><strong>Using child methods and parent methods</strong></p>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. my_ecar = ElectricCar('tesla', 'model s', 2016) <br>
+                    2. my_ecar.charge() <br>
+                    3. my_ecar.drive()
+                </code>
+            </div>
+            <br>
+            <p class="container"><strong>Overriding parent methods</strong></p>
+            <div class="container blue-grey lighten-4" >
+                <code>
+                    1. class ElectricCar(Car):<br>
+                    2. &ThickSpace;&ThickSpace; def fill_tank(self):<br>
+                    3. &ThickSpace;&ThickSpace; &ThickSpace;&ThickSpace; print("This car has no fuel tank!")
+                </code>
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>

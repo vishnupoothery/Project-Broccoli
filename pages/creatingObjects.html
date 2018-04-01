@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Python for Novices</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav class="light-blue darken-4 center-align" role="navigation">
+                <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Classes</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <p><strong>Creating an object from a class</strong><br>
+                    my_car = Car('audi', 'a4', 2016)
+                </p>
+                <p><strong>Accessing attribute values</strong><br>
+                    print(my_car.make) <br>
+                    print(my_car.model) <br>
+                    print(my_car.year)
+                </p>
+                <p>
+                    <strong>Calling Methods</strong><br>
+                    my_car.fill_tank() <br>
+                    my_car.drive()
+                </p>
+                <p><strong>Creating multiple Objects</strong><br>
+                    my_car = Car('audi', 'a4', 2016) <br>
+                    my_old_car = Car('subaru', 'outback', 2013) <br>
+                    my_truck = Car('toyota', 'tacoma', 2010)
+                </p>
+
+            </div>
+            <br>
+        </div>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/materialize.js"></script>
+        <script src="../js/init.js"></script>
+
+    </body>
+</html>
