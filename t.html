@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title></title>
+
+	<script>
+
+function showDate()	{
+
+document.getElementById("dateAndTime").innerHTML = Date();
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<p id="para"></p>
+
+
+
+<div id="dateAndTie"></div><br>
+
+<button onclick="showDate()">time</button>
+
+<form>
+
+<textarea id="words" rows="10" cols="20" onkeydown = "if (event.keyCode == 13)
+
+                                                      document.getElementById('btn').click()"    ></textarea>
+
+<input type="button" onclick="getwords()" value="Enter" id="btn" /> <br>
+
+</form>
+
+
+
+<script type="text/javascript">
+
+function getwords() {
+
+  text = words.value;
+
+  document.getElementById("para").innerHTML += '<p>'+ Date() + "  :  " +text;
+
+ document.getElementById("words").value = " ";
+
+}
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

@@ -12,3 +12,18 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.someClass {
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.code-block {
+    padding: 3px;
+    border-width: 5px;
+    border-color: darkblue;
+    border-radius: 2px;
+    color: black;
+    background-color: lightblue;
+}
